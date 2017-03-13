@@ -1,0 +1,1 @@
+var maxDistance=0;function setup(){$p.size(600,600);$p.noStroke();$p.fill(0);maxDistance=$p.dist(0,0,$p.width,$p.height)}$p.setup=setup;function draw(){$p.background(204,0,0);for(var a=400;a<=$p.width-100;a+=4)for(var b=400;b<=$p.height-100;b+=4){var c=$p.dist($p.mouseX,$p.mouseY,a,b)/maxDistance*20;$p.ellipse(a,b,c,c)}}$p.draw=draw;
